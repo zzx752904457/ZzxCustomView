@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.zzx.custom.view.LineAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:bg_color="#FFE1B9"
+        app:duration="5000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round_radius="25dp"
+        app:stroke_color="#FFB454"
+        app:stroke_width="5dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="开始动画"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+</android.support.constraint.ConstraintLayout>
